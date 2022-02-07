@@ -1,8 +1,8 @@
 ## 介绍
 
-自动化配置 `vim` 的个人开发环境。
+自动化配置 `vim` 的个人开发环境，包括基础的编辑器设置以及各种插件的安装与配置（包括LSP）。极大的便捷了配置过程。
 
-#### 内容/插件
+### 内容/插件
 
 0. [junegunn/vim-plug: Minimalist Vim Plugin Manager (github.com)](https://github.com/junegunn/vim-plug)
 
@@ -13,7 +13,7 @@
 5. [preservim/nerdcommenter: Vim plugin for intensely nerdy commenting powers (github.com)](https://github.com/preservim/nerdcommenter)
 6. [neoclide/coc.nvim: Nodejs extension host for vim & neovim, load extensions like VSCode and host language servers. (github.com)](https://github.com/neoclide/coc.nvim)
 
-#### 效果
+### 效果
 
 ##### 利用插件的效果可直接进入对应项目查看更多配置和效果
 
