@@ -1,3 +1,8 @@
+" init the plugins
+" (<--- left pannel) wait for 'PlugInstall' command
+" please quit vim after 'PlugInstall' command
+autocmd VimEnter * :PlugInstall
+
 set number
 set ruler
 set showcmd
