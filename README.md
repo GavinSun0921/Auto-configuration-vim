@@ -1,5 +1,9 @@
 ## 介绍
 
+[![Auto-configuration-vim](https://badgen.net/badge/github/Auto-configuration-vim?icon&label=GitHub&color=green)](https://github.com/GavinSun0921/Auto-configuration-vim)
+[![language](https://img.shields.io/badge/language-C++-F34B7D)](https://github.com/GavinSun0921/Auto-configuration-vim)
+[![update](https://img.shields.io/github/last-commit/GavinSun0921/Auto-configuration-vim)](Auto-configuration-vim)
+
 自动化配置 `vim` 的个人开发环境，包括基础的编辑器设置以及各种插件的安装与配置（包括LSP）。极大的便捷了配置过程。
 
 ### 内容/插件
