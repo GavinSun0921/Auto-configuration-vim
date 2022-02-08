@@ -62,6 +62,8 @@ autocmd FileType python nnoremap <buffer> <C-i> :w <RETURN> :!python % <RETURN>
 
 ## 使用方式
 
+**注意：本项目自动配置会将原有的vim配置进行备份（~/.vimrc.bak）**
+
 #### Unix
 
 ```shell
