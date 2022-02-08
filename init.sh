@@ -1,3 +1,4 @@
+set fileformat=unix
 if [ -f "$HOME/.vimrc" ];then
     echo "Your '$HOME/.vimrc' is saved as '$HOME/.vimrc.bak'"
     cp $HOME/.vimrc $HOME/.vimrc.bak
@@ -5,6 +6,8 @@ fi
 
 echo "Get new '$HOME/.vimrc'"
 cp .vimrc $HOME/.vimrc
+
+mkdir $HOME/.vim/autoload
 if [ ! -f "$HOME/.vim/autoload/plug.vim" ];then
     echo "Downloading vim-plug from github"
     curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
