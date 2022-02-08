@@ -1,6 +1,6 @@
 ## 介绍
 
-[![Auto-configuration-vim](https://badgen.net/badge/github/Auto-configuration-vim?icon&label=GitHub&color=green)](https://github.com/GavinSun0921/Auto-configuration-vim)
+[![repo](https://badgen.net/badge/github/Auto-configuration-vim?icon&label=GitHub&color=green)](https://github.com/GavinSun0921/Auto-configuration-vim)
 [![language](https://img.shields.io/badge/language-C++-F34B7D)](https://github.com/GavinSun0921/Auto-configuration-vim)
 [![update](https://img.shields.io/github/last-commit/GavinSun0921/Auto-configuration-vim)](Auto-configuration-vim)
 
@@ -11,10 +11,15 @@
 0. [junegunn/vim-plug: Minimalist Vim Plugin Manager (github.com)](https://github.com/junegunn/vim-plug)
 
 1. [itchyny/lightline.vim: A light and configurable statusline/tabline plugin for Vim (github.com)](https://github.com/itchyny/lightline.vim)
+
 2. [preservim/nerdtree: A tree explorer plugin for vim. (github.com)](https://github.com/preservim/nerdtree)
+
 3. [luochen1990/rainbow: Rainbow Parentheses Improved, shorter code, no level limit, smooth and fast, powerful configuration. (github.com)](https://github.com/luochen1990/rainbow)
+
 4. [mhinz/vim-startify: The fancy start screen for Vim. (github.com)](https://github.com/mhinz/vim-startify)
+
 5. [preservim/nerdcommenter: Vim plugin for intensely nerdy commenting powers (github.com)](https://github.com/preservim/nerdcommenter)
+
 6. [neoclide/coc.nvim: Nodejs extension host for vim & neovim, load extensions like VSCode and host language servers. (github.com)](https://github.com/neoclide/coc.nvim)
 
 ### 效果
