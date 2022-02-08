@@ -90,6 +90,7 @@ autocmd FileType python nnoremap <buffer> <C-i> :w <RETURN> :!python % <RETURN>
 
 ```shell
 git clone https://github.com/GavinSun0921/Auto-configuration-vim.git
+cd Auto-configuration-vim
 sh init.sh
 ```
 
