@@ -68,13 +68,15 @@ autocmd FileType python nnoremap <buffer> <C-i> :w <RETURN> :!python % <RETURN>
   - `Ctrl + Enter` 组合键为呼出候选菜单
   - `Enter` 键为确定当前补全候选项（当有候选项被选中时）
 
-  <img src="https://user-images.githubusercontent.com/251450/55285193-400a9000-53b9-11e9-8cff-ffe4983c5947.gif" alt="img" style="zoom: 50%;" />
+  ![](img/coc.nvim.gif)
 
 - 在普通模式下 `K` 键会新开前窗口打开光标对应位置代码的说明文档。
 
   <img src="img\K-help.png" alt="K-help" style="zoom:33%;" />
 
 - 配置 `\rn`（其中 `\` 为 `leader` 键，使用方式先后顺序按下即可）为 **重命名** 操作，如在变量定义处对变量进行重命名即可同时更新本代码文件内所有该变量的变量名。
+
+  ![](img/rename.gif)
 
 - 配置 `\f`（其中 `\` 为 `leader` 键，使用方式先后顺序按下即可）为 **格式化(format)选中代码** 操作，格式化的代码风格更多查看 `coc.nvim` 插件项目说明。
 
