@@ -26,6 +26,8 @@
 
 ##### 利用插件的效果可直接进入对应项目查看更多配置和效果
 
+以下截图为`Ubuntu(WSL)`与`macOS`的实际运行截图
+
 **#1. 更改开始界面**）利用 `vim-startify` 插件更改 `vim` 的开始界面，即当直接打开 `vim` 后不跟文件名时：
 
 <img src="img/startify.png" style="zoom: 27%;" />
