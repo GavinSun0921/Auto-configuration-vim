@@ -7,12 +7,17 @@ fi
 echo "Get new '$HOME/.vimrc'"
 cp .vimrc $HOME/.vimrc
 
-mkdir $HOME/.vim/autoload
-if [ ! -f "$HOME/.vim/autoload/plug.vim" ];then
-    echo "Downloading vim-plug from github"
-    curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+if [ ! -d "$HOME/.vim/autoload" ];then
+    echo "Create $HOME/.vim/autoload"
+    mkdir -p $HOME/.vim/autoload
 fi
+echo "Get $HOME/.vim/autoload/plug.vim"
+cp plug.vim $HOME/.vim/autoload/plug.vim
+# if [ ! -f "$HOME/.vim/autoload/plug.vim" ];then
+#     echo "Downloading vim-plug from github"
+#     curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
+#         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# fi
 
 if [ -f "$HOME/.vim/autoload/plug.vim" ];then
     echo "Install plugins via vim-plug"
