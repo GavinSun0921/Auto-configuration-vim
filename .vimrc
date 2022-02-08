@@ -164,11 +164,6 @@ endfunction
 
 
 
-
-
-
-nnoremap cc :w <RETURN> :!echo \| cat % \| /mnt/c/Windows/System32/clip.exe <RETURN>
-
 " C and C++ compiler:
 autocmd FileType c nnoremap <buffer> <C-i> :w <RETURN> :!gcc % -o test -g && ./test <RETURN>
 autocmd FileType cpp nnoremap <buffer> <C-i> :w <RETURN> :!g++ % -o test -g && ./test <RETURN>
