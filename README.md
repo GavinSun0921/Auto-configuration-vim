@@ -45,15 +45,28 @@ autocmd FileType python nnoremap <buffer> <C-i> :w <RETURN> :!python % <RETURN>
 
 <img src="img/lightline.vim.png" style="zoom:33%;" />
 
-**#4. 目录文件树支持**）利用 `nerdtree` 插件对目录文件树的支持，绑定快捷键`\e`（`\`为`leader`，使用方式先后顺序按下即可）可切换目录文件树的打开关闭状态：
+**#4. 目录文件树支持**）利用 `nerdtree` 插件对目录文件树的支持
+
+- 绑定快捷键`\e`（`\`为`leader`，使用方式先后顺序按下即可）可切换目录文件树的打开关闭状态：
 
 <img src="img/nerdtree.png" style="zoom:33%;" />
 
 **#5. 彩虹括号匹配**）利用 `rainbow` 插件实现不同层级括号不同颜色进行匹配。
 
-**#6. 符号匹配与代码提示/补全**）利用 `coc.nvim` 实现该功能：
+**#6. 一键自动注释代码**）利用 `nerdcommenter` 插件实现一键注释
 
-- 当补全出现补全候选项时，配置 `TAB` 键为下一个补全候选项，`Shift + TAB` 组合键为上一个补全候选项，`Ctrl + Enter` 组合键为呼出候选菜单。`Enter` 键为确定当前补全候选项（当有候选项被选中时）。
+- `\cc`（其中 `\` 为 `leader` 键，使用方式先后顺序按下即可）即可实现注释。
+- `\cu`（其中 `\` 为 `leader` 键，使用方式先后顺序按下即可）即可实现取消注释。
+- `\c<space>`（其中 `\` 为 `leader` 键，使用方式先后顺序按下即可）即可实现切换注释状态（对未注释代码使用可将代码注释，对注释代码使用可将代码取消注释）。
+
+**#7. 符号匹配与代码提示/补全**）利用 `coc.nvim` 实现该功能：
+
+- 当补全出现补全候选项时
+
+  -  `TAB` 键为下一个补全候选项
+  - `Shift + TAB` 组合键为上一个补全候选项
+  - `Ctrl + Enter` 组合键为呼出候选菜单
+  - `Enter` 键为确定当前补全候选项（当有候选项被选中时）
 
   <img src="https://user-images.githubusercontent.com/251450/55285193-400a9000-53b9-11e9-8cff-ffe4983c5947.gif" alt="img" style="zoom: 50%;" />
 
@@ -62,7 +75,9 @@ autocmd FileType python nnoremap <buffer> <C-i> :w <RETURN> :!python % <RETURN>
   <img src="img\K-help.png" alt="K-help" style="zoom:33%;" />
 
 - 配置 `\rn`（其中 `\` 为 `leader` 键，使用方式先后顺序按下即可）为 **重命名** 操作，如在变量定义处对变量进行重命名即可同时更新本代码文件内所有该变量的变量名。
+
 - 配置 `\f`（其中 `\` 为 `leader` 键，使用方式先后顺序按下即可）为 **格式化(format)选中代码** 操作，格式化的代码风格更多查看 `coc.nvim` 插件项目说明。
+
 - 更多功能和配置详见 `coc.nvim` 插件项目说明。
 
 ## 使用方式
