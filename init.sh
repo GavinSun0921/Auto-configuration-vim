@@ -1,21 +1,21 @@
-if [ -f "~/.vimrc" ];then
-    echo "Your '~/.vimrc' is saved as '~/.vimrc.bak'"
-    cp ~/.vimrc ~/.vimrc.bak
+if [ -f "$HOME/.vimrc" ];then
+    echo "Your '$HOME/.vimrc' is saved as '$HOME/.vimrc.bak'"
+    cp $HOME/.vimrc $HOME/.vimrc.bak
 fi
 
-echo "Get new '~/.vimrc'"
-cp .vimrc ~/.vimrc
-if [ ! -f "~/.vim/autoload/plug.vim" ];then
+echo "Get new '$HOME/.vimrc'"
+cp .vimrc $HOME/.vimrc
+if [ ! -f "$HOME/.vim/autoload/plug.vim" ];then
     echo "Downloading vim-plug from github"
-    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
-if [ -f "~/.vim/autoload/plug.vim" ];then
+if [ -f "$HOME/.vim/autoload/plug.vim" ];then
     echo "Install plugins via vim-plug"
-    vim ~/.vimrc
+    vim $HOME/.vimrc
     echo "comment the .vimrc for Install plugins"
-    sed '4 {s/^/" /}' ~/.vimrc > ~/.vimrc.buffer && mv ~/.vimrc.buffer ~/.vimrc
+    sed '4 s/^/" /' $HOME/.vimrc > $HOME/.vimrc.buffer && mv $HOME/.vimrc.buffer $HOME/.vimrc
 else
     echo "Downloading vim-plug from github failed, please try again"
 fi
