@@ -28,7 +28,7 @@
 
 **#1. 更改开始界面**）利用 `vim-startify` 插件更改 `vim` 的开始界面，即当直接打开 `vim` 后不跟文件名时：
 
-<img src="img/startify.png" style="zoom: 33%;" />
+<img src="img/startify.png" style="zoom: 27%;" />
 
 **#2. 一键编译/运行**）在编辑 `C/C++` 和 `Python` 代码时，配置了 `Ctrl + i` 自动编译并执行（其中 `C` 和 `C++` 分别调用 `gcc` 和 `g++` ）：
 
@@ -43,13 +43,13 @@ autocmd FileType python nnoremap <buffer> <C-i> :w <RETURN> :!python % <RETURN>
 
 **#3. 更美观的状态栏**）利用 `lightline.vim` 插件更改状态栏，显示当前模式、文件、编码方式等：
 
-<img src="img/lightline.vim.png" style="zoom:33%;" />
+<img src="img/lightline.vim.png" style="zoom:30%;" />
 
 **#4. 目录文件树支持**）利用 `nerdtree` 插件对目录文件树的支持
 
 - 绑定快捷键`\e`（`\`为`leader`，使用方式先后顺序按下即可）可切换目录文件树的打开关闭状态：
 
-<img src="img/nerdtree.png" style="zoom:33%;" />
+<img src="img/nerdtree.png" style="zoom: 26%;" />
 
 **#5. 彩虹括号匹配**）利用 `rainbow` 插件实现不同层级括号不同颜色进行匹配。
 
@@ -72,7 +72,7 @@ autocmd FileType python nnoremap <buffer> <C-i> :w <RETURN> :!python % <RETURN>
 
 - 在普通模式下 `K` 键会新开前窗口打开光标对应位置代码的说明文档。
 
-  <img src="img\K-help.png" alt="K-help" style="zoom:33%;" />
+  <img src="img\K-help.png" alt="K-help" style="zoom:26%;" />
 
 - 配置 `\rn`（其中 `\` 为 `leader` 键，使用方式先后顺序按下即可）为 **重命名** 操作，如在变量定义处对变量进行重命名即可同时更新本代码文件内所有该变量的变量名。
 
@@ -95,4 +95,4 @@ sh init.sh
 
 安装完成后退出 `vim` ，即配置完毕。
 
-<img src="img/PlugInstallStatus.png" style="zoom:33%;" />
+<img src="img/PlugInstallStatus.png" style="zoom:30%;" />
